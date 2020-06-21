@@ -18,7 +18,7 @@
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
 
     <!-- Put here your site title -->
-    <title>[Your name here] | Developer</title>
+    <title>Jeremy Euchi | Developer</title>
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[username], [name], skill" />
     <!-- Improve your SEO by adding a small descrption of you -->
@@ -46,12 +46,12 @@
     <div id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title" class="load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+          Hi, my name is <span class="text-color-main">Jeremy Euchi</span>
           <br />
-          I'm the Unknown Developer.
+          I'm a Software Engineer.
         </h1>
         <p class="hero-cta" class="load-hidden">
-          <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
+          <a class="cta-btn cta-btn--hero" href="#about">Learn more</a>
         </p>
       </div>
     </div>
@@ -78,19 +78,13 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info">
               <p class="about-wrapper__info-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Excepturi neque, ipsa animi maiores repellendu distinctioaperiam
-                earum dolor voluptatum consequatur blanditiis inventore debitis
-                fuga numquam voluptate architecto itaque molestiae.
+                Nice to meet you! I am a student at the University of California Santa Cruz. I am currently a senior pursuing a Bachelor of Science, Computer Science. You have found my page and I am excited to show you what I've learned!
               </p>
               <p class="about-wrapper__info-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Excepturi neque, ipsa animi maiores repellendu distinctioaperiam
-                earum dolor voluptatum consequatur blanditiis inventore debitis
-                fuga numquam voluptate architecto itaque molestiae.
+                I love learning about web developing and software engineering. I also really enjoy playing games and film acting. I recently got into motorcycling as well. As you can see, I love finding new hobbies and adventures to explore.
               </p>
               <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="#!">
+                <a target="_blank" class="cta-btn cta-btn--resume" href="https://drive.google.com/file/d/1sQoyMlRzbVrJUFbtGqJuELLCt600CbXi/view?usp=sharing">
                   View Resume
                 </a>
               </span>
@@ -108,34 +102,35 @@
           <h2 class="section-title dark-blue-text">
             Projects
           </h2>
-
           <!-- Each .row is a project -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
+                <h3 class="project-wrapper__text-title">HTTP Server and Load Balancer</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    I converted my single threaded HTTP server that handles GET, HEAD, and PUT
+                    requests to handle concurrent requests by using the pthread library and with mutex locks. Another requirement
+                    was to log each request sent by a client to a file if the user specifies one. Logging means to output the file’s content
+                    from the request to a log file. The load balancer seperately takes the port number of each multi-threaded server
+                    running and does a health check every X seconds or R requests. The client only communicates with the load
+                    balancer and the load balancer redirects to a healthy server. This uses multi-threading again and socket
+                    programming to set up client and server connections on each port.
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                <!-- <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
                   See Live
                 </a>
                 <a target="_blank" class="cta-btn text-color-main" href="#!">
                   Source Code
-                </a>
+                </a> -->
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
+                <a target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
+                    <img class="img-fluid" src="./assets/balancer.png" />
                   </div>
                 </a>
               </div>
@@ -147,29 +142,62 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
+                <h3 class="project-wrapper__text-title">Full stack: Note taking website</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    I used py4web to handle the back-end development by creating a database
+                    for each note uploaded to the server. Each user will have their own authenticated account for their personal notes.
+                    The JavaScript will handle the notes being presented on the page. With HTML conditional rendering, the
+                    JavaScript will be able to do GET and POST requests to the server with updated information as the user creates or
+                    updates their notes. Each note is ordered by last modified and starred notes will be at the top. The user is also
+                    able to change the color of each note and delete (with confirmation) each note. I learned about back-end and
+                    front-end development and how each part can communicate with each other
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                <!-- <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
                   See Live
                 </a>
                 <a target="_blank" class="cta-btn text-color-main" href="#!">
+                  Source Code
+                </a> -->
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/note.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Grocery Store Simulation</h3>
+                <div>
+                  <p class="mb-4">
+                    IntegerQueue to simulate set of jobs performed by a set of processors, where there are more jobs than processors, and therefore some jobs may have to wait in a queue. Think of shoppers at a grocery store waiting in line at check-out stands. A job is a basket of goods to be purchased and a processor is a clerk at a check-out stand ringing up the purchase. Abstractly, a job is an encapsulation of three quantities: arrival time, duration, and finish time
+                  </p>
+                </div>
+                <!-- <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                  See Live
+                </a> -->
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/jeuchi/CSE15/tree/master/Programming%20Assignments/pa4">
                   Source Code
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
+                <a target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
+                    <img class="img-fluid" src="./assets/Simulation.jpeg" />
                   </div>
                 </a>
               </div>
@@ -181,35 +209,33 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
+                <h3 class="project-wrapper__text-title">Six Degrees of Kevin Bacon</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    I have an input of movies with actors who starred in that movie, line by line. I then create adjacency lists of actors who shared the same movie with that actor, with the weight as the movie. Find the shortest path using BFS between two actors and print with the movie those actors shared together.
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                <!-- <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
                   See Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
+                </a> -->
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/jeuchi/CSE101_DataStructures/tree/master/Kevin_Bacon_Graphs">
                   Source Code
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
+                <a target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
+                    <img class="img-fluid" src="./assets/Six-Degrees.png" />
                   </div>
                 </a>
               </div>
             </div>
           </div>
           <!-- /END Project -->
+
+          
         </div>
       </div>
     </section>
@@ -223,13 +249,16 @@
         </h2>
         <div class="contact-wrapper">
           <p class="contact-wrapper__text">
-            [Put your call to action here]
+            University of California, Santa Cruz
+          </p>
+          <p class="contact-wrapper__text">
+          (650) 308-8559
           </p>
           <a
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
+            href="mailto:jeuchi@ucsc.edu"
+            >Email me!</a
           >
         </div>
       </div>
@@ -243,16 +272,16 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a href="#!" target="_blank">
+          <!-- <a href="#!" target="_blank">
             <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a href="#!" target="_blank">
+          </a> -->
+          <!-- <a href="#!" target="_blank">
             <i class="fa fa-codepen fa-inverse"></i>
-          </a>
-          <a href="#!" target="_blank">
+          </a> -->
+          <a href="https://www.linkedin.com/in/jeuchi/" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a href="#!" target="_blank">
+          <a href="https://github.com/jeuchi" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
