@@ -31,13 +31,15 @@ transform: scale(1.5);
   color: #E7EA00;
   text-shadow: 0 0 10px #fff;
 }
+
 .software-skill-inline > p {
   color: white;
   font-size: 20px;
 }
-.software-skill-inline > i:hover ~ p{
+.software-skill-inline > i:hover ~ p {
   color: #E7EA00;
 }
+
 
 
   background-color: $primary-color;
