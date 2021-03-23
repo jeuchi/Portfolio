@@ -52,21 +52,13 @@ export default function() {
   );
   
   /* Experience Section */
-  ScrollReveal().reveal('.experience-wrapper__text', 
+  ScrollReveal().reveal('.experience-wrapper__tabs', 
     assignProps(
       {
         delay: 500,
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
       }, defaultProps)
   );
-
-  ScrollReveal().reveal('.experience-wrapper.tabs', 
-  assignProps(
-    {
-      delay: 500,
-      origin: window.innerWidth > 768 ? 'left' : 'bottom'
-    }, defaultProps)
-);
 
   /* Projects Section */
   ScrollReveal().reveal('.project-wrapper__text', 
