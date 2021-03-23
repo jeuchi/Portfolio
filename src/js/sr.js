@@ -55,7 +55,7 @@ export default function() {
   ScrollReveal().reveal('.experience-wrapper__tabs', 
     assignProps(
       {
-        delay: 500,
+        delay: 1000,
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
       }, defaultProps)
   );

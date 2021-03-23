@@ -11,19 +11,10 @@ module.exports = {
         use: ["html-loader"]
       },
       {
-        test: /\.(jpg|jpeg|png|gif|svg|pdf)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[hash].[ext]",
-              outputPath: "assets",
-              esModule: false
-            }
-          }
-        ]
-      }
-    ]
+        test:  /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+    ],
   },
   // This config allows to use jQuery $ sign
   plugins: [
