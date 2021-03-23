@@ -50,6 +50,15 @@ export default function() {
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
       }, defaultProps)
   );
+  
+  /* Experience Section */
+  ScrollReveal().reveal('.experience-wrapper__tabs', 
+    assignProps(
+      {
+        delay: 1000,
+        origin: window.innerWidth > 768 ? 'left' : 'bottom'
+      }, defaultProps)
+  );
 
   /* Projects Section */
   ScrollReveal().reveal('.project-wrapper__text', 
