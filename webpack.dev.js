@@ -26,5 +26,8 @@ module.exports = merge(common, {
         ] //1. Turns sass into css
       }
     ]
+  },
+  devServer: {
+    host: '10.0.0.37'
   }
 });
