@@ -7,15 +7,11 @@
     @include respond(tab-land) {
       margin-top: 0;
       padding-top: 5rem;
+      padding-left: 5rem;
     }
   
     .experience-wrapper {
-
       &__tabs {
-        position: relative;
-        margin: auto;
-        width:680px;
-        height:350px;
         padding:30px 20px;
         background:#f5f5f5;
         box-shadow:5px 5px 10px 5px #ccc;
@@ -23,11 +19,13 @@
       }
 
       &__tabs .tab-header {
+        position:relative;
         float:left;
         width:180px;
         height:100%;
         border-right:1px solid #ccc;
         padding:50px 0px;
+    
       }
 
       &__tabs .tab-header > div {
@@ -37,7 +35,7 @@
         font-weight:600;
         color:#888;
         cursor:pointer;
-        padding-left:10px;
+        padding-left:4px;
       }
 
       &__tabs .tab-header > div:hover,
@@ -54,7 +52,7 @@
       &__tabs .tab-content {
         position:relative;
         height:100%;
-        overflow:auto;
+        overflow:none;
       }
 
       &__tabs .tab-content > div > i {
@@ -74,41 +72,48 @@
       &__tabs .tab-content > div > p {
         text-align: justify;
         padding-top: 10px;
-        padding-left: 40px;
-        padding-right: 40px;
       }
 
       &__tabs .tab-content > div {
-        position: absolute;
         text-align:center;
         display: none;
       }
 
       &__tabs .tab-content > div.active {
-        position: relative;
         display: block;
+        -webkit-animation: fade 1s;
         animation: fade 1s;
       }
-      
-      @keyframes fade {
+
+      @-webkit-keyframes fade {
         0% {
           opacity: 0;
-          bottom: 200px;
+          -webkit-transform: (translateY(200px))
         }
 
         100% {
           opacity: 1;
-          bottom: 0px;
+          -webkit-transform: (translateY(0px))
         }
       }
 
-      &__tabs .tab-indicator {
+      @keyframes fade {
+        0% {
+          opacity: 0;
+          transform: translateY(200px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0px);;
+        }
+      }
+
+      &__tabs .tab-header > .tab-indicator {
         position:absolute;
-        width:4px;
-        height:50px;
         background:$primary-color;
-        left:198px;
-        top:80px;
+        right: -2px;
+        top:50px;
         transition:all 500ms ease-in-out;
       }
     }
