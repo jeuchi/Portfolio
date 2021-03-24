@@ -11,7 +11,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/template.html',
+      template: './src/portfolio.html',
       favicon: './src/assets/favicon.png'
     })
   ],
@@ -26,5 +26,8 @@ module.exports = merge(common, {
         ] //1. Turns sass into css
       }
     ]
+  },
+  devServer: {
+    host: '10.0.0.37'
   }
 });
