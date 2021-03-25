@@ -1,46 +1,44 @@
 #about {
-.grow { 
-font-size: 30px;
-transition: all .2s ease-in-out; 
-}
+  .grow { 
+    font-size: 30px;
+    transition: all .2s ease-in-out; 
+  }
 
-.grow:hover { 
-transform: scale(1.5); 
-}
+  .grow:hover { 
+    transform: scale(1.5); 
+  }
 
   .dev-icons {
-  padding-left: 0;
-  list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: center;
-}
+    padding-left: 0;
+    list-style: none;
+    font-size: 3rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
 
-.software-skill-inline {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
+  .software-skill-inline {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
 
-.software-skill-inline > i {
-  color: #fff;
-}
+  .software-skill-inline > i {
+    color: #fff;
+  }
 
-.software-skill-inline > i:hover {
-  color: #E7EA00;
-  text-shadow: 0 0 10px #fff;
-}
+  .software-skill-inline > i:hover {
+    color: #E7EA00;
+    text-shadow: 0 0 10px #fff;
+  }
 
-.software-skill-inline > p {
-  color: white;
-  font-size: 20px;
-}
-.software-skill-inline > i:hover ~ p {
-  color: #E7EA00;
-}
-
-
+  .software-skill-inline > p {
+    color: white;
+    font-size: 20px;
+  }
+  .software-skill-inline > i:hover ~ p {
+    color: #E7EA00;
+  }
 
   background-color: $primary-color;
   background-image: linear-gradient(
@@ -85,6 +83,10 @@ transform: scale(1.5);
       height: 100%;
       justify-content: center;
       flex-direction: column;
+
+      @include respond(phone) {
+        padding-bottom: 4rem;
+      }
 
       @include respond(tab-port-sm) {
         align-items: center;
