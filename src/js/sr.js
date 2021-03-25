@@ -25,6 +25,9 @@ export default function() {
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
       }, defaultProps)
   );
+
+  (function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+  document.getElementById("hero").style.height = window.innerHeight + 'px'; // scroll fix in iOS (url bar resizing)
   
   ScrollReveal().reveal('.hero-cta', 
     assignProps(
