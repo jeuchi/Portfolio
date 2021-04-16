@@ -8,11 +8,11 @@
 
 
     <!-- Put here your site title -->
-    <title>Jeremy Euchi | Developer</title>
+    <title>Jeremy Euchi</title>
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
     <meta name="keywords" content="jeuchi, Jeremy, Software Engineer, Developer" />
     <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="Jeremy Euchi | Developer" />
+    <meta name="description" content="Jeremy Euchi" />
     <meta property="og:image" content="https://i.ibb.co/PCYWmDX/Logo.png">
 
     <!-- Required librarys -->
@@ -107,10 +107,6 @@
                   <p>React.js</p>
                 </li>
                 <li class="software-skill-inline">
-                  <i class="fas fa-atom grow"></i>
-                  <p>Redux</p>
-                </li>
-                <li class="software-skill-inline">
                   <i class="fab fa-vuejs grow"></i>
                   <p>Vue.js</p>
                 </li>
@@ -132,7 +128,7 @@
                 </li>
                 <li class="software-skill-inline">
                   <i class="fab fa-cuttlefish grow"></i>
-                  <p>C / C++ / C# (Unity 3D)</p>
+                  <p>C / C++</p>
                 </li>
                 <li class="software-skill-inline">
                   <i class="fab fa-java grow"></i>
@@ -203,11 +199,11 @@
                 <h3>Software Engineer Internship</h3>
                 <h3>January 2021 - present</h3>
                 <p>As part of Trimble's Timing Division, I worked on the new Res 720 chip for global
-                   navigation satellite systems. Working on the firmware included things like managing
-                   protocols (TSIP, NMEA, etc) for receiving and transmission of packets from Airoha's API 
-                   (binary packets from satellites). I also worked on Trimble's VTS software to also 
-                   use information sent by the receiver (Res 720). For instance, I implemented logging 
-                   packets to CSV and graphing of satellites and their signal levels and other useful info.
+                   navigation satellite systems. On the firmware side, this included things like managing
+                   protocols (TSIP, NMEA, etc) for receiving and decoding binary packets from Airoha's API. 
+                   I also contributed to Trimble's legacy VTS software for querying data to and from the receiver. 
+                   For instance, I implemented logging packets to a CSV file, graphing satellites real-time with their signal levels,
+                   and other useful data.
                 </p>
               </div>   
             </div>
@@ -231,11 +227,11 @@
                 <h3 class="project-wrapper__text-title">Smart Brain Web App (React.js, Node.js, PostgreSQL, Clarifai API, Heroku)</h3>
                 <div>
                   <p class="mb-4">
-                    This project helped me understand the full web developer mindset from the front-end to the back-end with a database. 
+                    This project helped me understand the full stack web developer mindset.
                     With the power of React.js, Node.js, Clarifai API, and PostgreSQL, I managed to deploy my website on Heroku as a complete web application. 
                     You are able to safely register and sign in to the application. The password is encrypted using bcrypt and the user profile is stored in PostgreSQL 
-                    on Heroku. Each user will have their own number of images entered being tracked and displayed on the home page. They can submit a url of an image, 
-                    and with the power of the Clarifai API, a bounding box will be drawn on the face.
+                    on Heroku. Each user will have their own number of images counted on the home page. They can submit a url of an image and
+                    the data sent by Clarifai API will be used to draw a box around the face.
                   </p>
                 </div>
                 <a target="_blank" class="cta-btn cta-btn--hero" href="https://smart-brain-jeremy.herokuapp.com/">
@@ -269,10 +265,10 @@
                 <div>
                   <p class="mb-4">
                     I took upon the challenge to learn Swift and try to build an iPhone app.  As of today, I have managed to create a home screen of videos 
-                    which will be pulled from Amazon S3 storage.  There is also a custom login screen and sign up screen that is authenticated by Firebase. 
-                     Firebase also contains information about each video such as path to Amazon, views, uploaded, etc.  It is still in development as I am working on 
-                     letting users edit clips recorded in the camera section of the app.  I am also anticipating adding facial recognition to add filters similar to
-                      Snapchat and allowing users to upload final videos to the storage tied to their account.
+                    which will be pulled from Amazon S3 storage.  There is also a custom login/sign-up screen that is authenticated by Firebase. 
+                    Firebase also contains information about each video such as views, upload date, etc.  It is still in development as I am working on 
+                    letting users edit clips. I plan on adding facial recognition for filters similar to
+                    Snapchat, and allowing users to upload final videos to storage.
                   </p>
                 </div>
                 <a target="_blank" class="cta-btn text-color-main" href="https://github.com/jeuchi/Firefly">
@@ -299,10 +295,10 @@
                 <h3 class="project-wrapper__text-title">Video game (Unity 3D Engine, C#)</h3>
                 <div>
                   <p class="mb-4">
-                    Under the Scrum framework, our group meets 3 times a week to see how far we are with our sprint plan.  
+                    Under the Scrum framework, our group met 3 times a week to see how far we are with our sprint plan.  
                     We also practiced writing up a Design Document and Sprint Reports.  I’ve been Scrum Master for one of these sprints, 
-                    managing our burn up chart and making sure we are meeting our goals we set on Trello.  I worked on modeling the player environment and 
-                    programming in C# for interactions like the main menu and loading screen.
+                    managing our burn-up chart and making sure we are meeting our goals we set on Trello.  I worked on modeling the player environment and 
+                    programming in C# for interactions with the main menu and loading screen.
                   </p>
                 </div>
                 <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Stazfire/CSE115A-Rage-Quit">
@@ -331,10 +327,10 @@
                   <p class="mb-4">
                     I wanted to challenge myself to see if I can build a way to visualize sorting algortihms such as Bubble Sort. By using React.js, 
                     I built a dynamic website that randomly generates an array of numbers that are displayed as bars on a graph. The user can select the 
-                    type of algorithm from the drop down menu and click on Sort. The sorting algorithm will start running on the array and each 'frame' is 
-                    rendered on the screen showing each step of the process. This can be 'comparing 36 and 24' or 'swapping 36 and 24'. The user can also stop
-                    and reset the sorting at any time and even choose the speed of the animation using the slider. This was a fun way for me to really understand
-                    these algorithms visually and also increase my skills in JavaScript and rendering animations.
+                    type of algorithm from the drop down menu and click on Sort. The sorting algorithm will start running and each 'frame' is 
+                    rendered on the screen, to denote every step of the process. This can be 'comparing 36 and 24' or 'swapping 36 and 24'. The user can stop
+                    or reset the sorting at any time. They also have the option to choose the speed of the animation using the slider. 
+                    This was a fun way for me to really understand these algorithms visually while increasing my skills in Javascript and rendering animations.
                   </p>
                 </div>
                 <a target="_blank" class="cta-btn cta-btn--hero" href="https://jeuchi.github.io/sorting-visualizer/">
@@ -365,11 +361,11 @@
                 <div>
                   <p class="mb-4">
                     I converted my single threaded HTTP server that handles GET, HEAD, and PUT
-                    requests to handle concurrent requests by using the pthread library and with mutex locks. Another requirement
+                    requests to also manage concurrent requests by using the pthread library with mutex locks. Another requirement
                     was to log each request sent by a client to a file if the user specifies one. Logging means to output the file’s content
-                    from the request to a log file. The load balancer seperately takes the port number of each multi-threaded server
+                    from the request to a log. The load balancer seperately takes the port number of each multi-threaded server
                     running and does a health check every X seconds or R requests. The client only communicates with the load
-                    balancer and the load balancer redirects to a healthy server. This uses multi-threading again and socket
+                    balancer to redirect them to a healthy server. This uses multi-threading and socket
                     programming to set up client and server connections on each port.
                   </p>
                 </div>
@@ -402,11 +398,11 @@
                   <p class="mb-4">
                     I used py4web to handle the back-end development by creating a database
                     for each note uploaded to the server. Each user will have their own authenticated account for their personal notes.
-                    The JavaScript will handle the notes being presented on the page. With HTML conditional rendering, the
-                    JavaScript will be able to do GET and POST requests to the server with updated information as the user creates or
+                    The Javascript will handle the notes being presented on the page. With HTML conditional rendering, we can 
+                    do GET and POST requests to the server with updated information as the user creates or
                     updates their notes. Each note is ordered by last modified and starred notes will be at the top. The user is also
-                    able to change the color of each note and delete (with confirmation) each note. I learned about back-end and
-                    front-end development and how each part can communicate with each other.
+                    able to change the color of each note or delete it (with confirmation). I learned about full stack development and 
+                    how each part can communicate with each other.
                   </p>
                 </div>
                 <a target="_blank" class="cta-btn cta-btn--hero" href="http://jeuchi.pythonanywhere.com/Note-taking/index">
@@ -436,8 +432,8 @@
                 <h3 class="project-wrapper__text-title">RoboFriends (React.js, Redux)</h3>
                 <div>
                   <p class="mb-4">
-                    I learned the fundamentals of React to create and deploy a dynamic website. I strengthened my skills in javascript, updating libraries 
-                    from package.json, and the understanding of using components. The website lists a group of robots that are pulled from an API and displayed 
+                    I learned the fundamentals of React to create and deploy a dynamic website. I strengthened my skills in Javascript, updating libraries 
+                    from package.json, and the understanding of using components in React. The website lists a group of robots that are pulled from an API and displayed 
                     on the page. The user can search and the website will dynamically change to narrow the results of a robots name.
                   </p>
                 </div>
@@ -461,7 +457,6 @@
           </div>
           <!-- /END Project -->
 
-
           <!-- Each .row is a project -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
@@ -469,7 +464,7 @@
                 <h3 class="project-wrapper__text-title">Grocery Store Simulation (C Language)</h3>
                 <div>
                   <p class="mb-4">
-                    IntegerQueue to simulate set of jobs performed by a set of processors, where there are more jobs than processors, and therefore some 
+                    This project is to simulate a set of jobs performed with a variable number of processors. When there are more jobs than processors, some 
                     jobs may have to wait in a queue. Think of shoppers at a grocery store waiting in line at check-out stands. A job is a basket of goods 
                     to be purchased and a processor is a clerk at a check-out stand ringing up the purchase. Abstractly, a job is an encapsulation of three 
                     quantities: arrival time, duration, and finish time.
@@ -478,9 +473,11 @@
                 <!-- <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
                   See Live
                 </a> -->
+                <!--
                 <a target="_blank" class="cta-btn text-color-main" href="https://github.com/jeuchi/CSE15/tree/master/Programming%20Assignments/pa4">
                   GitHub
                 </a>
+                -->
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
@@ -502,17 +499,17 @@
                 <h3 class="project-wrapper__text-title">Six Degrees of Kevin Bacon (C++ Language)</h3>
                 <div>
                   <p class="mb-4">
-                    I have an input of movies with actors who starred in that movie, line by line. I then create adjacency lists of actors who shared 
-                    the same movie with that actor, with the weight as the movie. Find the shortest path using BFS between two actors and print with the
+                    I have an input of movies with actors who starred in that movie. I then created adjacency lists of actors who shared 
+                    the same movie. The goal is to find the shortest path using Breadth First Search between two actors and print with the
                      movie those actors shared together.
                   </p>
                 </div>
                 <!-- <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
                   See Live
                 </a> -->
-                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/jeuchi/CSE101_DataStructures/tree/master/Kevin_Bacon_Graphs">
+                <!-- <a target="_blank" class="cta-btn text-color-main" href="https://github.com/jeuchi/CSE101_DataStructures/tree/master/Kevin_Bacon_Graphs">
                   GitHub
-                </a>
+                </a> -->
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
@@ -526,8 +523,7 @@
             </div>
           </div>
           <!-- /END Project -->
-
-          
+        
         </div>
       </div>
     </section>
