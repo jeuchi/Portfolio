@@ -1,8 +1,10 @@
 import initTilt from './js/tilt';
 import initSr from './js/sr';
 import initEx from './js/experience';
+import initSc from './js/scrollTop';
 
 import './style/main.scss';
+import topFunction from './js/scrollTop';
 
 $('a[href^="#"]').on('click', function(event) {
   var target = $(this.getAttribute('href'));
@@ -22,3 +24,4 @@ $('a[href^="#"]').on('click', function(event) {
 initSr();
 initTilt();
 initEx();
+initSc();
