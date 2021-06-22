@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "2.1",
+  "version": "2.1.0",
   "description": "Jeremy Euchi Software Engineer Portfolio",
   "main": "index.js",
   "scripts": {
