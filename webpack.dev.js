@@ -27,7 +27,9 @@ module.exports = merge(common, {
       }
     ]
   },
+  /* iPhone testing
   devServer: {
     host: '10.0.0.37'
   }
+  */
 });
