@@ -1,5 +1,5 @@
 import assignProps from './assignProps';
-export default function() {
+export default function () {
   const defaultProps = {
     easing: 'cubic-bezier(0.5, 0, 0, 1)',
     distance: '30px',
@@ -7,38 +7,38 @@ export default function() {
     desktop: true,
     mobile: true
   };
-  
+
   /* Section Title */
-  ScrollReveal().reveal('.section-title', 
+  ScrollReveal().reveal('.section-title',
     assignProps(
       {
-        delay:300,distance:'0px', 
-        origin:'bottom'
+        delay: 300, distance: '0px',
+        origin: 'bottom'
       }, defaultProps)
   );
 
   /* Hero Section */
-  ScrollReveal().reveal('.hero-title', 
+  ScrollReveal().reveal('.hero-title',
     assignProps(
-      { 
-        delay: 500, 
+      {
+        delay: 500,
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
       }, defaultProps)
   );
 
-  (function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+  (function (l) { var i, s = { touchend: function () { } }; for (i in s) l.addEventListener(i, s) })(document); // sticky hover fix in iOS
   document.getElementById("hero").style.height = window.innerHeight + 'px'; // scroll fix in iOS (url bar resizing)
-  
-  ScrollReveal().reveal('.hero-cta', 
+
+  ScrollReveal().reveal('.hero-cta',
     assignProps(
       {
-        delay: 1000, 
+        delay: 1000,
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
       }, defaultProps)
   );
 
   /* About Section */
-  ScrollReveal().reveal('.about-wrapper__image', 
+  ScrollReveal().reveal('.about-wrapper__image',
     assignProps(
       {
         delay: 600,
@@ -46,16 +46,16 @@ export default function() {
       }, defaultProps)
   );
 
-  ScrollReveal().reveal('.about-wrapper__info', 
+  ScrollReveal().reveal('.about-wrapper__info',
     assignProps(
       {
         delay: 1000,
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
       }, defaultProps)
   );
-  
+
   /* Experience Section */
-  ScrollReveal().reveal('.experience-wrapper__tabs', 
+  ScrollReveal().reveal('.experience-wrapper__tabs',
     assignProps(
       {
         delay: 1000,
@@ -64,7 +64,7 @@ export default function() {
   );
 
   /* Projects Section */
-  ScrollReveal().reveal('.project-wrapper__text', 
+  ScrollReveal().reveal('.project-wrapper__text',
     assignProps(
       {
         delay: 500,
@@ -72,7 +72,7 @@ export default function() {
       }, defaultProps)
   );
 
-  ScrollReveal().reveal('.project-wrapper__image', 
+  ScrollReveal().reveal('.project-wrapper__image',
     assignProps(
       {
         delay: 1000,
@@ -81,7 +81,7 @@ export default function() {
   );
 
   /* Contact Section */
-  ScrollReveal().reveal('.contact-wrapper', 
+  ScrollReveal().reveal('.contact-wrapper',
     assignProps(
       {
         delay: 800,

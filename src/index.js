@@ -2,11 +2,12 @@ import initTilt from './js/tilt';
 import initSr from './js/sr';
 import initEx from './js/experience';
 import initSc from './js/scrollTop';
+import initSa from './js/scrollAnimation';
 
 import './style/main.scss';
 import topFunction from './js/scrollTop';
 
-$('a[href^="#"]').on('click', function(event) {
+$('a[href^="#"]').on('click', function (event) {
   var target = $(this.getAttribute('href'));
   if (target.length) {
     event.preventDefault();
@@ -25,3 +26,4 @@ initSr();
 initTilt();
 initEx();
 initSc();
+initSa();

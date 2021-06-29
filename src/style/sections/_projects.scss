@@ -1,12 +1,102 @@
 #projects {
-  background-color: $white-color;
-  color: $dark-blue-text;
+  color: whitesmoke;
   margin-top: -10rem;
   padding-top: 15rem;
+
+  canvas {
+    max-width: 100vw;
+    max-height: 100vh;
+  }
 
   @include respond(tab-land) {
     margin-top: 0;
     padding-top: 5rem;
+  }
+
+  .scroll-container {
+    height: 100vh;
+    background: black;
+    display: inline;
+  }
+  .speak {
+    margin: 150vh 0;
+    &:first-child {
+      margin-top: -20vh;
+    }
+
+    @media only screen and (max-width: 10240px) and (max-width: 734px) {
+      margin: 1vh 0;
+    }
+  }
+
+  .speak[data-scroll] {
+    // transition: opacity .3s;
+    transform: translatey(calc(var(--viewport-y) * 30vh));
+    opacity: calc(var(--visible-y));
+  }
+
+  .static-project-1 {
+    @media only screen and (max-width: 10240px) and (max-width: 734px) {
+      max-width: 100%;
+      height: 100vh;
+      background-size: 335px 803px;
+      background-repeat: no-repeat;
+      vertical-align: middle;
+      background-position-x: center;
+      background-image: url("../../src/assets/iOS-app.png");
+    }
+  }
+
+  .static-project-2 {
+    @media only screen and (max-width: 10240px) and (max-width: 734px) {
+      max-width: 100%;
+      height: 100vh;
+      background-size: 627px 571px;
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-image: url("../../src/assets/smart-brain.png");
+    }
+  }
+
+  .scroll-sequence__content {
+    width: 31%;
+    padding: 4em;
+
+    @media only screen and (max-width: 734px) {
+      width: 100%;
+      padding: 6em;
+    }
+  }
+
+  .scroll-sequence {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -5;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width: 10240px) and (max-width: 734px) {
+      display: none;
+    }
+  }
+
+  :root {
+    font-size: 20px;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: white;
+    text-shadow: 0 0 12px rgba(black, 0.8);
+  }
+  body {
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
   }
 
   .project-wrapper {
@@ -63,8 +153,7 @@
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         transition: all 0.2s ease-out;
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-        transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
-          0.5s box-shadow,
+        transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.5s box-shadow,
           0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
 
         @include respond(phone) {
