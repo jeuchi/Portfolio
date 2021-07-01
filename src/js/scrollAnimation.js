@@ -6,8 +6,8 @@ export default function () {
     for (let i = 1; i <= 80; i++) {
         p1SequenceImages.push(`${`000${i}`.slice(-4)}.jpg`);
     }
-    for (let i = 0; i <= 98; i++) {
-        p2SequenceImages.push(`${`000${i}`.slice(-3)}.jpg`);
+    for (let i = 1; i <= 162; i++) {
+        p2SequenceImages.push(`${`000${i}`.slice(-4)}.jpg`);
     }
 
     const requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
@@ -354,7 +354,7 @@ export default function () {
         container: '.project-2-sequence',
         scrollWith: '.project-2-container',
         images: p2SequenceImages,
-        imagesRoot: 'https://jacobbelanger.com/assets/sequence/',
+        imagesRoot: 'https://raw.githubusercontent.com/jeuchi/media/main/SmartBrain/',
         priorityFrames: [0, 20, 40, 60, 90],
         cover: true,
         starts: 'out',
