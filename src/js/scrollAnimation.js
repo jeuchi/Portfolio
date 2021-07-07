@@ -362,12 +362,4 @@ export default function () {
     });
 
     // END SCROLL_SEQUENCE CODE
-
-    ScrollOut({
-        targets: '.speak',
-        cssProps: {
-            viewportY: true,
-            visibleY: true
-        }
-    });
 };
