@@ -2,12 +2,19 @@
 export default function () {
     const p1SequenceImages = [];
     const p2SequenceImages = [];
+    const p3SequenceImages = [];
 
-    for (let i = 1; i <= 80; i++) {
-        p1SequenceImages.push(`${`000${i}`.slice(-4)}.jpg`);
-    }
-    for (let i = 1; i <= 162; i++) {
+    for (let i = 1; i <= 500; i++) {
+        if (i <= 49) {
+            p3SequenceImages.push(`${`000${i}`.slice(-4)}.jpg`);
+            p1SequenceImages.push(`${`000${i}`.slice(-4)}.jpg`);
+        }
+        else if (i <= 80) {
+            p1SequenceImages.push(`${`000${i}`.slice(-4)}.jpg`);
+        }
         p2SequenceImages.push(`${`000${i}`.slice(-4)}.jpg`);
+    }
+    for (let i = 1; i <= 49; i++) {
     }
 
     const requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
@@ -123,13 +130,6 @@ export default function () {
             this.renderIndex(this.displayIndex);
         }
 
-        /**
-       * By Ken Fyrstenberg Nilsen
-       *
-       * drawImageProp(context, image [, x, y, width, height [,offsetX, offsetY]])
-       *
-       * If image and context are only arguments rectangle will equal canvas
-      */
         drawImageCover(ctx, img, x, y, w, h, offsetX, offsetY) {
 
             if (arguments.length === 2) {
@@ -253,6 +253,7 @@ export default function () {
                 cover: false,
                 ...opts
             }
+
             this.container = typeof opts.container === 'object' ?
                 opts.container :
                 document.querySelector(opts.container);
@@ -277,7 +278,9 @@ export default function () {
             this.canvas = new Canvas({
                 container: this.container,
                 images: this.images,
-                cover: this.opts.cover
+                cover: this.opts.cover,
+                imageWidth: this.imageWidth,
+                imageHeight: this.imageHeight
             });
 
             this.init();
@@ -292,7 +295,7 @@ export default function () {
                 window.addEventListener('scroll', () => this.changeOnWindowScroll());
             })
             this.loader.once('IMAGES_LOADED', () => {
-                console.log('Sequence Loaded');
+                //console.log('Sequence Loaded');
             })
         }
 
@@ -322,17 +325,6 @@ export default function () {
             if (starts === 'out') u += clientHeight;
             if (ends === 'in') d -= clientHeight;
             if (starts == 'in') d -= clientHeight;
-            // start: out, ends: out
-            // const value = ((clientOffsety + clientHeight) - offsetY) / (clientHeight + elementHeight) * 100;
-
-            //start: in, ends: out
-            // const value = (clientOffsety - offsetY) / (elementHeight) * 100;
-
-            //start: out, ends: in
-            // const value = ((clientOffsety + clientHeight) - offsetY) / (elementHeight) * 100;
-
-            // Start: in, ends: in
-            // (clientOffsety - offsetY) / (elementHeight - clientHeight)
 
             const value = u / d * 100;
             return value > 100 ? 100 : value < 0 ? 0 : value;
@@ -354,9 +346,20 @@ export default function () {
         container: '.project-2-sequence',
         scrollWith: '.project-2-container',
         images: p2SequenceImages,
-        imagesRoot: 'https://raw.githubusercontent.com/jeuchi/media/main/SmartBrain/',
+        imagesRoot: 'https://raw.githubusercontent.com/jeuchi/media/main/SmartBrainDemo/',
         priorityFrames: [0, 20, 40, 60, 90],
-        cover: true,
+        cover: false,
+        starts: 'out',
+        ends: 'in'
+    });
+
+    const p3Sequence = new ScrollSequence({
+        container: '.project-3-sequence',
+        scrollWith: '.project-3-container',
+        images: p3SequenceImages,
+        imagesRoot: 'https://raw.githubusercontent.com/jeuchi/media/main/SortingVisualizerDemo/',
+        priorityFrames: [0, 20, 40, 60, 90],
+        cover: false,
         starts: 'out',
         ends: 'in'
     });
