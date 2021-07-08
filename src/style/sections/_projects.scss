@@ -24,6 +24,8 @@
       margin-top: -20vh;
     }
 
+    background-color: #000000;
+    padding: 10px;
     @media only screen and (max-width: 10240px) and (max-width: 734px) {
       margin: 1vh 0;
     }
@@ -39,7 +41,7 @@
     @media only screen and (max-width: 10240px) and (max-width: 734px) {
       max-width: 100%;
       height: 100vh;
-      background-size: 335px 803px;
+      background-size: 335px 671px;
       background-repeat: no-repeat;
       vertical-align: middle;
       background-position-x: center;
@@ -51,15 +53,26 @@
     @media only screen and (max-width: 10240px) and (max-width: 734px) {
       max-width: 100%;
       height: 100vh;
-      background-size: 627px 571px;
+      background-size: 727px 671px;
       background-repeat: no-repeat;
       background-position-x: center;
       background-image: url("../../src/assets/smart-brain.png");
     }
   }
 
+  .static-project-3 {
+    @media only screen and (max-width: 10240px) and (max-width: 734px) {
+      max-width: 100%;
+      height: 100vh;
+      background-size: 1027px 671px;
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-image: url("../../src/assets/sorting-visualizer.png");
+    }
+  }
+
   .scroll-sequence__content {
-    width: 31%;
+    width: 35%;
     padding: 4em;
     font-weight: bold;
 
@@ -70,6 +83,7 @@
     @media only screen and (max-width: 734px) {
       width: 100%;
       padding: 6em;
+      margin-left: 0%;
     }
   }
 
@@ -88,10 +102,6 @@
     @media only screen and (max-width: 10240px) and (max-width: 734px) {
       display: none;
     }
-  }
-
-  .project-title {
-    font-size: 5rem;
   }
 
   :root {
